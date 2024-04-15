@@ -3,7 +3,7 @@ import json
 from langchain_openai import ChatOpenAI
 
 def filter_faqs(json_data):
-    llm = ChatOpenAI(openai_api_key="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", model="gpt-3.5-turbo-0613")
+    llm = ChatOpenAI(openai_api_key="YOUR_API_KEY", model="gpt-3.5-turbo-0613")
     
     response = llm.invoke(f"Please filter out the faqs which have name of other companies than Heyo. Here is the data: \n {json_data} \n Always only return the json data only and only even if the data is already filtered and do not return extra text other than json.")
 
