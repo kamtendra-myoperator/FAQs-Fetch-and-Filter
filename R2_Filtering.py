@@ -12,7 +12,7 @@ def generate_questions_and_answers(result_string):
     3. If more than one "Question" have similar issue, merge them into one.
     Always return the data in JSON format given {"data":[{"Question":"<Question>","Answer":"<Answer>"},{"Question":"<Question>","Answer":"<Answer>"}]}'''
 
-    client = OpenAI(api_key="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")
+    client = OpenAI(api_key="YOUR_API_KEY")
 
     completion = client.chat.completions.create(
         model="gpt-3.5-turbo",  # You can adjust the model based on your preference
